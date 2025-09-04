@@ -27,6 +27,32 @@ a:hover {
   transform: scale(1.05);
 }
 
+.contact {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #2ecc71; /* Green theme */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact a:hover {
+  color: #27ae60; /* Darker green on hover */
+}
+
 /* ===============================
    Header / Navbar
 =============================== */
@@ -282,3 +308,4 @@ footer {
     padding: 20px;
   }
 }
+
