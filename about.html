@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Harini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      width: 85%;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: #00ffcc;
+      margin-bottom: 20px;
+      position: relative;
+      letter-spacing: 1px;
+    }
+
+    .intro, .section p {
+      font-size: 18px;
+      color: #ccc;
+      line-height: 1.8;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.2s;
+      animation-fill-mode: forwards;
+    }
+
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 10px 0;
+      position: relative;
+      padding-left: 20px;
+      font-size: 17px;
+      color: #ccc;
+      transition: color 0.3s;
+    }
+
+    ul li::before {
+      content: "▶";
+      color: #00ffcc;
+      position: absolute;
+      left: 0;
+    }
+
+    ul li:hover {
+      color: #00ffcc;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #111;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #0d0d0d;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #222;
+      letter-spacing: 0.5px;
+    }
+
+    @media(max-width: 768px){
+      .container {
+        width: 90%;
+        padding: 10px;
+      }
+
+      header {
+        padding: 15px 20px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+
+      .intro, .section p, ul li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="internship.html">Internship</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Introduction -->
+    <div class="section">
+      <h2>Who I Am</h2>
+      <p class="intro">
+        Hello! I’m <span class="highlight">Harini</span>, a passionate <span class="highlight">Frontend Developer</span> skilled in
+        <span class="highlight">HTML, CSS, JavaScript, and React</span>. I have experience working on
+        <span class="highlight">MERN stack projects</span> and love creating engaging, user-friendly digital
+        experiences. Beyond coding, I am deeply interested in <span class="highlight">UI/UX design</span> and always look for ways to merge creativity with technology.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.E in Computer Science</strong> – Ramco Institute of Technology, 2022–2026, <span class="highlight">85%</span></li>
+        <li><strong>Higher Secondary (HSC)</strong> – Sri Vaiyapuri Vidyalaya Higher Secondary School, 2022, <span class="highlight">92%</span></li>
+        <li><strong>Secondary School (SSLC)</strong> – Sri Vaiyapuri Vidyalaya Matriculation School, 2020, <span class="highlight">82%</span></li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills & Expertise</h2>
+      <ul>
+        <li>Frontend: HTML5, CSS3, JavaScript, React</li>
+        <li>Backend: Node.js, Express.js, MongoDB</li>
+        <li>UI/UX: Wireframing, Prototyping, Responsive Design</li>
+        <li>Tools: GitHub, VS Code, Figma</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Food Delivery App</strong> – A MERN stack app for ordering and tracking food online.</li>
+        <li><strong>Travel Planner</strong> – MERN stack app to plan trips, book hotels, and track budgets.</li>
+        <li><strong>Cosmetic Website</strong> – UI-rich website showcasing cosmetic services.</li>
+      </ul>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Academic Rank Holder</li>
+        <li>Secured Rank 16 out of 9000+ participants in CodeQuezt #16 Coding Challenge hosted by Naukri Campus</li>
+        <li>Secured NPTEL Elite Silver certification in Cloud Computing</li>
+        <li>Secured NPTEL Elite Silver certification in Object Oriented System Development using Java patterns (Top 5%)</li>
+        <li>ISTE Srinivasa Ramanujan Mathematical Competition – qualified for State & National level and awarded certificates</li>
+        <li>Awarded prize for excellent performance in workshop conducted by Coding Mart</li>
+        <li>Offered an internship by Supraja Technologies based on outstanding performance in Cybersecurity Hackathon</li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Introduction to SAP by Great Learning</li>
+        <li>Introduction to Cybersecurity Foundations by Infosec</li>
+        <li>Software Testing Tutorial by Great Learning</li>
+        <li>Threat Analysis by Great Learning</li>
+      </ul>
+    </div>
+
+    <!-- Hackathons & Workshops -->
+    <div class="section">
+      <h2>Hackathons & Workshops</h2>
+      <ul>
+        <li>Attended a 10-day DSA workshop at Coding Mart, gaining hands-on experience in algorithms and problem-solving techniques</li>
+        <li>Participated in Cybersecurity Hackathons Level 1 and Level 2, showcasing skills in ethical hacking and cybersecurity</li>
+      </ul>
+    </div>
+
+    <!-- Goals -->
+    <div class="section">
+      <h2>Goals & Vision</h2>
+      <p>
+        My vision is to become a <span class="highlight">full-stack developer</span> and contribute to projects
+        that make a meaningful impact. I aim to blend <span class="highlight">technology</span> with
+        <span class="highlight">creativity</span> to deliver outstanding web experiences.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Harini | Designed with ❤️
+  </footer>
+
+</body>
+</html>
